@@ -1,14 +1,3 @@
-(function () {
-  var accounts = {
-    admin: { username: "admin", password: "5782644", name: "Administrator", role: "admin" },
-    staff: { username: "staff", password: "st004", name: "Staff Member", role: "staff" },
-    customer: { username: "customer", password: "ct007", name: "Customer", role: "customer" }
-  };
-
-  function currentUser() {
-    try { return JSON.parse(sessionStorage.getItem("glassMartUser") || "null"); }
-    catch (_) { return null; }
-  }
 
   function signOut() {
     sessionStorage.removeItem("glassMartUser");
