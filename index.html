@@ -17,10 +17,15 @@
       <p class="eyebrow">ACCOUNT ACCESS</p>
       <h2>Sign in to your account</h2>
       <form id="loginForm" class="form-stack">
-        <label for="username">Username</label>
-        <input id="username" name="username" autocomplete="username" placeholder="Enter your username" required>
-        <label for="password">Password</label>
-        <input id="password" name="password" type="password" autocomplete="current-password" placeholder="Enter your password" required>
+       <label for="username">Email Address</label>
+<input
+    id="username"
+    name="username"
+    type="email"
+    autocomplete="username"
+    placeholder="Enter your email address"
+    required
+>
         <p id="loginError" class="error-message" role="alert"></p>
         <button class="btn primary full" type="submit">Sign in <span>→</span></button>
       </form>
